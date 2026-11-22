@@ -1,0 +1,29 @@
+.ts { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); border-top: 1px solid var(--line); }
+
+.ts > div { padding: 40px 48px 0 0; }
+
+.ts > div + div { padding-left: 48px; border-left: 1px solid var(--line); }
+
+.ts h3 { font: 600 clamp(22px, 2vw, 30px)/1.1 var(--font-head); text-transform: uppercase; }
+
+.ts .label { display: block; margin-bottom: 18px; color: var(--accent); }
+
+.ts p { margin-top: 18px; font-size: 16px; color: var(--ink-2); }
+
+.ts ul { margin-top: 18px; }
+
+.ts li { position: relative; padding: 10px 0 10px 24px; border-bottom: 1px solid var(--line); font-size: 15px; color: var(--ink-2); }
+
+.ts li::before { content: ""; position: absolute; left: 0; top: 19px; width: 10px; height: 2px; background: var(--accent); }
+
+@media (max-width: 768px) {
+.ts { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 768px) {
+.ts > div { padding: 28px 0 0; }
+}
+
+@media (max-width: 768px) {
+.ts > div + div { margin-top: 28px; padding-left: 0; border-left: 0; border-top: 1px solid var(--line); }
+}

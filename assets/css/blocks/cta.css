@@ -1,0 +1,42 @@
+.cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 96px var(--pad) 88px;
+  text-align: center;
+}
+
+.cta__title { font: 600 clamp(28px, 3.4vw, 52px)/1.05 var(--font-head); text-transform: uppercase; }
+
+.cta__wire { width: 120px; height: 240px; margin: 28px 0 32px; }
+
+.cta__duct { fill: none; stroke-linejoin: round; }
+
+.cta__duct--out { stroke: var(--ink); stroke-width: 20; }
+
+.cta__duct--in { stroke: var(--bg); stroke-width: 16; }
+
+.cta__diff path { fill: var(--bg); stroke: var(--ink); stroke-width: 2; stroke-linejoin: round; }
+
+.cta__air path {
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-dasharray: 4 7;
+  animation: airflow 1s linear infinite;
+}
+
+@keyframes airflow { to { stroke-dashoffset: -22; } }
+
+@media (max-width: 768px) {
+.cta { padding: 64px var(--pad) 64px; }
+}
+
+@media (max-width: 768px) {
+.cta__wire { width: 100px; height: 200px; margin: 20px 0 24px; }
+}
+
+.cta__text { max-width: 520px; margin-top: 20px; font-size: 17px; color: var(--ink-2); }
+
+.cta__text + .btn { margin-top: 32px; }

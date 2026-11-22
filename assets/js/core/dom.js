@@ -1,0 +1,4 @@
+export const $ = (selector, root = document) => root.querySelector(selector);
+export const $$ = (selector, root = document) => Array.from(root.querySelectorAll(selector));
+export const body = document.body;
+export const header = $('[data-header]');

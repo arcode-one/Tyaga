@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 130" aria-hidden="true"><style>.cta__duct{fill:none;stroke-linejoin:round}.cta__duct--out{stroke:#15191C;stroke-width:20}.cta__duct--in{stroke:#fff;stroke-width:16}.cta__diff path{fill:#fff;stroke:#15191C;stroke-width:2}.cta__air path{fill:none;stroke:#C9450F;stroke-width:2;stroke-linecap:round;stroke-dasharray:4 7}.duct{fill:none;stroke:#15191C;stroke-width:1.5}.unit{fill:#fff;stroke:#15191C;stroke-width:1.5}.flow{fill:none;stroke:#C9450F;stroke-width:2;stroke-dasharray:6 8}</style>
+              <path class="duct" d="M20 50h340v30H20z"></path>
+              <rect class="unit" x="60" y="38" width="120" height="54" rx="3"></rect>
+              <path class="duct" d="M80 44v42M92 44l8 42M104 44l8 42"></path>
+              <circle class="duct" cx="150" cy="65" r="17"></circle>
+              <path class="duct" d="M150 48v34M133 65h34"></path>
+              <path class="duct" d="M260 80v24h20v-24M320 80v24h20v-24"></path>
+              <path class="flow" d="M8 65h352M270 85v32M330 85v32"></path>
+              <text x="60" y="26">ФИЛЬТР · НАГРЕВ · ВЕНТИЛЯТОР</text>
+              <text x="250" y="126">ДИФФУЗОРЫ</text>
+            </svg>

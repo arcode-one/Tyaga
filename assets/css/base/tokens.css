@@ -1,0 +1,21 @@
+:root {
+  --ink: #15191C;
+  --ink-2: #3B4348;
+  --muted: #5F686D;
+  --line: #DCE1E3;
+  --bg: #FFFFFF;
+  --soft: #F1F3F4;
+  --dark: #1D2225;
+  --dark-2: #262C30;
+  --dark-line: #3A4247;
+  --on-dark: #E9ECEE;
+  --on-dark-muted: #A3ADB2;
+  --accent: #C9450F;
+  --accent-light: #FF7A45;
+  --tab: #6E777C;
+  --pad: clamp(16px, 2.8vw, 40px);
+  --ease: cubic-bezier(.2, .7, .2, 1);
+  --ease-io: cubic-bezier(.7, 0, .2, 1);
+  --font-head: 'Unbounded', 'Arial Black', sans-serif;
+  --font-body: 'Onest', system-ui, -apple-system, 'Segoe UI', sans-serif;
+}

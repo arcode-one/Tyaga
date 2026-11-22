@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 130" aria-hidden="true"><style>.cta__duct{fill:none;stroke-linejoin:round}.cta__duct--out{stroke:#15191C;stroke-width:20}.cta__duct--in{stroke:#fff;stroke-width:16}.cta__diff path{fill:#fff;stroke:#15191C;stroke-width:2}.cta__air path{fill:none;stroke:#C9450F;stroke-width:2;stroke-linecap:round;stroke-dasharray:4 7}.duct{fill:none;stroke:#15191C;stroke-width:1.5}.unit{fill:#fff;stroke:#15191C;stroke-width:1.5}.flow{fill:none;stroke:#C9450F;stroke-width:2;stroke-dasharray:6 8}</style>
+              <path class="duct" d="M40 50h320v30H40z"></path>
+              <path class="duct" d="M70 50V24h20v26M150 50V24h20v26M230 50V24h20v26"></path>
+              <rect class="unit" x="290" y="38" width="70" height="54" rx="3"></rect>
+              <circle class="duct" cx="325" cy="65" r="17"></circle>
+              <path class="flow flow--back" d="M80 14v40M160 14v40M240 14v40M60 65h340"></path>
+              <text x="40" y="118">МЕСТНЫЕ ОТСОСЫ И ЗОНТЫ</text>
+            </svg>

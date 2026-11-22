@@ -1,0 +1,100 @@
+.header {
+  position: absolute;
+  inset: 0 0 auto;
+  z-index: 50;
+  color: #fff;
+}
+
+.header.is-solid {
+  background: rgba(255, 255, 255, .96);
+  color: var(--ink);
+  box-shadow: 0 1px 0 var(--line);
+}
+
+.header.is-hidden { transform: translateY(-100%); }
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  height: 80px;
+  padding-inline: var(--pad);
+}
+
+.logo { display: flex; align-items: center; gap: 10px; flex: none; }
+
+.logo__mark { width: 36px; height: 36px; flex: none; }
+
+.logo__word { font: 700 20px/1 var(--font-head); letter-spacing: .02em; }
+
+.logo__sub {
+  font-size: 11px;
+  line-height: 1.2;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  opacity: .8;
+}
+
+.nav { display: flex; gap: 4px; margin-left: auto; }
+
+.nav__link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  padding: 0 14px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  transition: background-color .25s, color .25s;
+}
+
+.nav__link:hover { background: rgba(255, 255, 255, .18); }
+
+.nav__link.is-current { background: #fff; color: var(--ink); }
+
+.header.is-solid .nav__link:hover { background: var(--soft); }
+
+.header.is-solid .nav__link.is-current { background: var(--ink); color: #fff; }
+
+.header__actions { display: flex; align-items: center; gap: 8px; margin-left: 16px; }
+
+.header__phone { margin-right: 8px; font-size: 13px; font-weight: 600; white-space: nowrap; }
+
+.header.is-solid .icon-btn { background: var(--soft); }
+
+.header.is-solid .icon-btn:hover { background: var(--ink); color: #fff; }
+
+@media (max-width: 1180px) {
+.nav { display: none; }
+}
+
+@media (max-width: 1180px) {
+.header__actions { margin-left: auto; }
+}
+
+@media (max-width: 768px) {
+.header__inner { gap: 10px; height: 68px; }
+}
+
+@media (max-width: 768px) {
+.logo__sub,
+.header__phone { display: none; }
+}
+
+@media (max-width: 768px) {
+.logo__mark { width: 32px; height: 32px; }
+}
+
+@media (max-width: 768px) {
+.logo__word { font-size: 17px; }
+}
+
+@media (max-width: 768px) {
+.header__actions { margin-left: auto; gap: 6px; }
+}
+
+@media (max-width: 768px) {
+.header__tg { display: none; }
+}

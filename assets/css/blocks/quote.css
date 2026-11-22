@@ -1,0 +1,22 @@
+.quote .avatar,
+.quote .person-initials { width: 56px; height: 56px; }
+
+.quote { max-width: 1040px; }
+
+.quote p { font: 500 clamp(22px, 2.4vw, 36px)/1.3 var(--font-head); }
+
+.quote footer { display: flex; align-items: center; gap: 16px; margin-top: 36px; }
+
+.quote footer .ph { width: 56px; height: 56px; border-radius: 50%; }
+
+.quote footer .ph::before { content: none; }
+
+.quote cite { font-style: normal; }
+
+.quote cite b { display: block; font-weight: 600; }
+
+.quote cite span { color: var(--muted); }
+
+@media (max-width: 768px) {
+.quote footer { margin-top: 24px; }
+}

@@ -1,0 +1,43 @@
+.faq { border-top: 1px solid var(--line); }
+
+.faq details { border-bottom: 1px solid var(--line); }
+
+.faq summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 26px 0;
+  font: 600 clamp(16px, 1.4vw, 20px)/1.25 var(--font-head);
+  text-transform: uppercase;
+  list-style: none;
+  cursor: pointer;
+}
+
+.faq summary::-webkit-details-marker { display: none; }
+
+.faq summary > .disclosure-icon {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  font: 400 22px/1 var(--font-body);
+  transition: transform .35s var(--ease), background-color .3s, color .3s, border-color .3s;
+}
+
+.faq summary:hover > .disclosure-icon { border-color: var(--ink); }
+
+.faq details[open] summary > .disclosure-icon { transform: rotate(45deg); background: var(--ink); border-color: var(--ink); color: #fff; }
+
+.faq details p { max-width: 760px; padding: 0 64px 28px 0; color: var(--ink-2); }
+
+@media (max-width: 768px) {
+.faq summary { padding: 20px 0; }
+}
+
+@media (max-width: 768px) {
+.faq details p { padding-right: 0; }
+}

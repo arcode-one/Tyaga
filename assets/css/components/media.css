@@ -1,0 +1,58 @@
+.ph {
+  position: relative;
+  overflow: hidden;
+  background-color: #DDE2E4;
+  background-image: repeating-linear-gradient(135deg, rgba(21, 25, 28, .08) 0 1px, transparent 1px 12px);
+  transition: background-color .5s;
+}
+
+.ph::before {
+  content: "[фото: " attr(data-label) "]";
+  position: absolute;
+  left: 16px;
+  right: 16px;
+  bottom: 14px;
+  font: 500 11px/1.35 var(--font-body);
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: #4A5459;
+}
+
+.ph--dark {
+  background-color: #252B2F;
+  background-image: repeating-linear-gradient(135deg, rgba(255, 255, 255, .05) 0 1px, transparent 1px 14px);
+}
+
+.ph--dark::before { color: #9AA4A9; }
+
+.ph--oval { border-radius: 2px; }
+
+.ph__img {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: cover;
+  color: transparent;
+  font-size: 0;
+  transition: opacity .5s;
+}
+
+.ph:has(> .ph__img)::before { content: none; }
+
+.avatar,
+.person-initials {
+  display: inline-flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #E6EDF0;
+  color: #365A6C;
+}
+
+.person-initials { font: 600 14px/1 var(--font-body); letter-spacing: .04em; }

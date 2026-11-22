@@ -1,0 +1,17 @@
+.passport { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 48px; }
+
+.passport > div { display: grid; grid-template-columns: minmax(120px, 2fr) 3fr; gap: 16px; padding: 18px 0; border-top: 1px solid var(--line); }
+
+.passport dt { padding-top: 3px; font-size: 11px; font-weight: 500; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+
+.passport dd { font-weight: 500; }
+
+.passport--one { grid-template-columns: minmax(0, 1fr); }
+
+@media (max-width: 768px) {
+.passport { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 768px) {
+.passport > div { grid-template-columns: 1fr; gap: 4px; padding: 14px 0; }
+}

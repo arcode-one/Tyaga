@@ -1,0 +1,84 @@
+.gantt { overflow-x: auto; }
+
+.gantt__inner { min-width: 880px; }
+
+.gantt__row { display: grid; grid-template-columns: 220px 1fr; align-items: center; min-height: 58px; border-bottom: 1px solid var(--line); }
+
+.gantt__row--head { min-height: 44px; border-bottom-color: var(--ink); }
+
+.gantt__months { display: grid; grid-template-columns: repeat(5, 1fr); }
+
+.gantt__months span { padding-left: 10px; font-size: 11px; font-weight: 500; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+
+.gantt__label { padding-right: 16px; font-weight: 500; }
+
+.gantt__track {
+  position: relative;
+  align-self: stretch;
+  background-image: linear-gradient(90deg, var(--line) 1px, transparent 1px);
+  background-size: 20% 100%;
+}
+
+.gantt__bar {
+  position: absolute;
+  top: 50%;
+  left: var(--s);
+  width: var(--w);
+  height: 26px;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  border-radius: 3px;
+  background: var(--ink);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: .04em;
+  white-space: nowrap;
+  transform: translateY(-50%);
+  transform-origin: left center;
+}
+
+.gantt__bar--accent { background: var(--accent); }
+
+.gantt__bar--light { background: #C8D0D4; color: var(--ink); }
+
+@media (max-width: 768px) {
+.gantt { overflow: visible; }
+}
+
+@media (max-width: 768px) {
+.gantt__inner { min-width: 0; }
+}
+
+@media (max-width: 768px) {
+.gantt__row { grid-template-columns: minmax(0, 1fr); gap: 8px; min-height: 0; padding: 12px 0; }
+}
+
+@media (max-width: 768px) {
+.gantt__row--head { padding: 0 0 8px; }
+}
+
+@media (max-width: 768px) {
+.gantt__row--head > .label { display: none; }
+}
+
+@media (max-width: 768px) {
+.gantt__months span { padding-left: 4px; }
+}
+
+@media (max-width: 768px) {
+.gantt__track { height: 28px; }
+}
+
+@media (max-width: 768px) {
+.gantt__label { font-size: 14px; }
+}
+
+@media (max-width: 768px) {
+.gantt__bar { padding: 0 6px; }
+}
+
+.gantt__months { grid-template-columns: repeat(var(--m, 5), 1fr); }
+
+.gantt__track { background-size: calc(100% / var(--m, 5)) 100%; }

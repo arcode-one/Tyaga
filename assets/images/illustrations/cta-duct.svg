@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="cta__wire" viewBox="0 0 120 240" aria-hidden="true"><style>.cta__duct{fill:none;stroke-linejoin:round}.cta__duct--out{stroke:#15191C;stroke-width:20}.cta__duct--in{stroke:#fff;stroke-width:16}.cta__diff path{fill:#fff;stroke:#15191C;stroke-width:2}.cta__air path{fill:none;stroke:#C9450F;stroke-width:2;stroke-linecap:round;stroke-dasharray:4 7}.duct{fill:none;stroke:#15191C;stroke-width:1.5}.unit{fill:#fff;stroke:#15191C;stroke-width:1.5}.flow{fill:none;stroke:#C9450F;stroke-width:2;stroke-dasharray:6 8}</style>
+      <path class="cta__duct cta__duct--out" d="M60 0V46C60 72 32 70 32 96V118C32 144 60 142 60 168V176"></path>
+      <path class="cta__duct cta__duct--in" d="M60 0V46C60 72 32 70 32 96V118C32 144 60 142 60 168V176"></path>
+      <g class="cta__diff"><path d="M42 176H78L90 190H30Z"></path><path d="M40 183H80"></path></g>
+      <g class="cta__air"><path d="M42 202v20M60 202v30M78 202v20"></path></g>
+    </svg>

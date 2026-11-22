@@ -1,0 +1,30 @@
+/* Local Lucide icons share one 24 × 24 coordinate system. */
+.icon {
+  display: block;
+  flex: none;
+  width: 20px;
+  height: 20px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.75;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  overflow: visible;
+}
+.icon-btn { padding: 0; line-height: 0; place-items: center; }
+.icon-btn > .icon { width: 18px; height: 18px; margin: 0; place-self: center; }
+.btn > .icon, .disclosure-icon > .icon { margin: 0; align-self: center; }
+.disclosure-icon { flex: none; line-height: 0; }
+.disclosure-icon > .icon { width: 20px; height: 20px; }
+.geo__list-icons, .geo__popup-icons { align-items: center; justify-content: center; }
+.geo__map .leaflet-control-zoom a, .geo__map .leaflet-popup-close-button {
+  display: grid;
+  place-items: center;
+  padding: 0;
+  line-height: 0;
+}
+.geo__map .leaflet-control-zoom .icon { width: 20px; height: 20px; }
+.geo__map .leaflet-popup-close-button .icon { width: 18px; height: 18px; }
+.geo__reset button { display: inline-flex; align-items: center; justify-content: center; gap: 8px; }
+.geo__reset .icon { width: 16px; height: 16px; }
+.doc__visual > .icon { width: 104px; height: 104px; stroke-width: 1.4; }

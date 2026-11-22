@@ -1,0 +1,24 @@
+.scope { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 48px; counter-reset: s; }
+
+.scope li {
+  display: grid;
+  grid-template-columns: 48px 1fr;
+  gap: 16px;
+  padding: 22px 0;
+  border-top: 1px solid var(--line);
+  counter-increment: s;
+}
+
+.scope li::before { content: counter(s, decimal-leading-zero); font: 700 14px/1.5 var(--font-head); color: var(--accent); }
+
+.scope b { display: block; font-weight: 600; }
+
+.scope span { display: block; margin-top: 4px; font-size: 14px; color: var(--muted); }
+
+@media (max-width: 768px) {
+.scope { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 768px) {
+.scope li { grid-template-columns: 36px 1fr; }
+}

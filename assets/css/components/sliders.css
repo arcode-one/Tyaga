@@ -1,0 +1,25 @@
+.swiper { position: relative; overflow-x: auto; scrollbar-width: none; }
+
+.swiper::-webkit-scrollbar { display: none; }
+
+.swiper.swiper-initialized { overflow: hidden; }
+
+.swiper-wrapper {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  box-sizing: content-box;
+  margin: 0;
+  padding: 0;
+  transition-property: transform;
+}
+
+.swiper:not(.swiper-initialized) .swiper-wrapper { padding-inline: var(--pad); }
+
+.swiper-slide { position: relative; flex-shrink: 0; }
+
+.swiper-free-mode > .swiper-wrapper { transition-timing-function: ease-out; }
+
+.swiper-initialized .swiper-slide { cursor: grab; }
+
+.slider-nav { display: flex; gap: 8px; }
